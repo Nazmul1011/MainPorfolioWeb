@@ -80,7 +80,7 @@ export const KeyFeaturesSection = () => {
           {/* Left Side - Image */}
           <div className="w-full md:w-1/3 flex justify-center">
             <img
-              src={isDark ? "src/assets/unhappay.png" : "src/assets/happynazmul.png"}
+              src={isDark ? "public/unhappay.png" : "public/happynazmul.png"}
               alt="Nazmul Hasan"
               className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full shadow-2xl transition-all duration-700 ease-in-out"
             />

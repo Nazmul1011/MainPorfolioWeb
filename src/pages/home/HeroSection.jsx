@@ -28,7 +28,7 @@ export const HeroSection = () => {
       {/* Profile Image */}
       <div className="fade-child mb-8">
         <img
-          src={isDark ? "src/assets/unhappay.png" : "src/assets/happynazmul.png"}
+          src={isDark ? "public/unhappay.png" : "public/happynazmul.png"}
           alt="Nazmul Hasan"
           className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover shadow-2xl 
           transition-all duration-700 ease-in-out"
