@@ -7,16 +7,21 @@ import { FooterHome } from "./pages/home/footerHome";
 import Home from "./pages/home/home.jsx";
 import Help from "./pages/help/Help.jsx";
 import ContactUs from "./pages/Contact.jsx";
+import useScrollReveal from "./components/useScrollReveal.js";
 
 // ---------------- Layouts ----------------
 function DefaultLayout() {
+  useScrollReveal();
   return (
     <div>
       <Navbar />
       <main>
         <Outlet />
       </main>
-      <FooterHome />
+      <div className="reveal">
+    <FooterHome />
+      </div>
+      
     </div>
   );
 }
