@@ -14,7 +14,7 @@ export default function ContactUs() {
   return (
     <section
       className="reveal w-full bg-gradient-to-b from-white to-gray-50 
-      dark:from-gray-900 dark:to-darkbg transition-all duration-700 ease-in-out"
+      dark:from-darkbg dark:to-darkbg transition-all duration-700 ease-in-out"
     >
       <div className="max-w-screen-lg mx-auto px-6 md:px-12 py-20 text-center relative fade-child">
         {/* Header */}
@@ -34,7 +34,10 @@ export default function ContactUs() {
         {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
-          className="max-w-2xl mx-auto space-y-6 text-left fade-child"
+          className="max-w-2xl mx-auto space-y-6 text-left fade-child
+          bg-white dark:bg-gray-800/90 rounded-2xl p-8 border border-gray-200 dark:border-gray-700
+           hover:shadow-[0_15px_50px_rgba(0,0,0,0.6)]
+          transform hover:-translate-y-2 transition-all duration-500 ease-in-out"
         >
           {/* Name and Email Row */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -42,15 +45,15 @@ export default function ContactUs() {
               type="text"
               placeholder="Enter your name"
               required
-              className="border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
-              focus:ring-2 focus:ring-gray-800 dark:focus:ring-gray-300 outline-none transition-all duration-300"
+              className="border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
+              focus:ring-2 focus:ring-black outline-none transition-all duration-300"
             />
             <input
               type="email"
               placeholder="Enter your email"
               required
-              className="border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
-              focus:ring-2 focus:ring-gray-800 dark:focus:ring-gray-300 outline-none transition-all duration-300"
+              className="border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
+              focus:ring-2 focus:ring-black outline-none transition-all duration-300"
             />
           </div>
 
@@ -59,8 +62,8 @@ export default function ContactUs() {
             placeholder="Enter your message"
             rows="6"
             required
-            className="border border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
-            focus:ring-2 focus:ring-gray-800 dark:focus:ring-gray-300 outline-none resize-none transition-all duration-300"
+            className="border border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-white rounded-xl px-4 py-3 w-full text-sm 
+            focus:ring-2 focus:ring-black outline-none resize-none transition-all duration-300"
           ></textarea>
 
           {/* Submit Button */}
@@ -70,7 +73,7 @@ export default function ContactUs() {
               className="flex items-center justify-center gap-2 
               bg-gray-900 dark:bg-white text-white dark:text-gray-900 
               px-8 py-3 rounded-full text-sm font-medium 
-              hover:bg-black dark:hover:bg-gray-200 
+              hover:scale-105 hover:bg-black dark:hover:bg-gray-200 
               transition-all duration-500"
             >
               Submit now <FiArrowRight className="text-lg" />
