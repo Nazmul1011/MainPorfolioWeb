@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' 
-    ? '/NazmulHasanportfolio/' // for GitHub Pages
-    : '/',                     // for local dev
+  base: process.env.VITE_DEPLOY_TARGET === 'github'
+    ? '/NazmulHasanportfolio/' // GitHub Pages
+    : '/',                     // Local & Vercel
 })

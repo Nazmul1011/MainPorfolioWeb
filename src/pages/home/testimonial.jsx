@@ -2,22 +2,22 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const projects = [
   {
-    image: "/public/project1.jpg",
+    image: "/project1.jpg",
     title: "Expense Tracker",
     category: "Mobile App (Flutter -> (Gatex) + Firebase)",
   },
   {
-    image: "/public/project2.jpg",
+    image: "/project2.jpg",
     title: "Meal Tracker",
     category: "Mobile App (Flutter -> (Gatex) + Django)",
   },
   {
-    image: "/public/project3.jpg",
+    image: "/project3.jpg",
     title: "Fitness App",
     category: "Mobile App (Flutter -> (Gatex) + Firebase)",
   },
   {
-  image: "/public/porject5.jpg",
+  image: "/porject5.jpg",
   title: "Inventory Management System",
   category: "Full-Stack (React + Tailwind + Python)",
 },
