@@ -1,5 +1,5 @@
-import { HiArrowNarrowRight, HiDownload } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { HiDownload } from "react-icons/hi";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 export const HeroSection = () => {
@@ -45,10 +45,23 @@ export const HeroSection = () => {
       </p>
 
       {/* Main Headline */}
-      <h1 className="fade-child text-4xl md:text-6xl font-semibold text-gray-900 dark:text-white leading-tight mb-4">
-        Flutter Developer <br className="hidden md:block" /> <span className="text-6xl">Crafting Modern
-        Mobile Apps.</span> 
+      <h1 className="fade-child text-4xl md:text-6xl font-semibold text-gray-900 dark:text-white leading-tight mb-2">
+        Flutter Developer <br className="hidden md:block" />{" "}
+        <span className="text-6xl">Crafting Modern Mobile Apps.</span>
       </h1>
+
+      {/* Current Role */}
+      <p className="fade-child text-gray-500 dark:text-gray-400 text-base md:text-lg mb-6">
+        Working as a{" "}
+        <span className="font-medium text-gray-800 dark:text-white">
+          Junior Flutter Developer
+        </span>{" "}
+        at{" "}
+        <span className="font-medium text-gray-800 dark:text-white">
+          Miicon Solution
+        </span>{" "}
+        (June 2025 – Present)
+      </p>
 
       {/* Description */}
       <p className="fade-child text-gray-500 dark:text-gray-400 max-w-xl mx-auto mb-10">
@@ -61,22 +74,38 @@ export const HeroSection = () => {
       </p>
 
       {/* Buttons */}
-      <div className="fade-child flex flex-col sm:flex-row gap-4">
-        {/* Contact Button */}
-        <Link
-          to="/contact"
-          className="inline-flex items-center justify-center gap-2 
-          bg-black dark:bg-white text-white dark:text-gray-900 
-          px-6 py-3 rounded-full text-sm md:text-base font-medium 
-          hover:bg-gray-800 dark:hover:bg-gray-200 
-          transition-all duration-500"
-        >
-          contact me <HiArrowNarrowRight className="text-lg" />
-        </Link>
+      <div className="fade-child flex flex-col sm:flex-row items-center gap-4">
+        {/* 🔗 Social Links (Black & White) */}
+        <div className="flex items-center gap-6 text-2xl">
+          <a
+            href="https://linkedin.com/in/nazmulhasan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/nazmu11011"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://facebook.com/nazmul.hasan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-300"
+          >
+            <FaFacebook />
+          </a>
+        </div>
 
         {/* Resume Download Button */}
         <a
-          href="/Nazmul_Hasan______.pdf"
+          href="/Nazmul_Hasan_Resume.pdf"
           download="Nazmul_Hasan_Resume.pdf"
           className="inline-flex items-center justify-center gap-2 
           border border-gray-400 dark:border-gray-600 
@@ -85,7 +114,7 @@ export const HeroSection = () => {
           hover:bg-gray-100 dark:hover:bg-gray-800 
           transition-all duration-500"
         >
-          my resume <HiDownload className="text-lg" />
+          My Resume <HiDownload className="text-lg" />
         </a>
       </div>
     </section>

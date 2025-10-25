@@ -44,8 +44,8 @@ export const KeyFeaturesSection = () => {
     },
     {
       icon: <FaBriefcase className="text-3xl text-blue-600 mb-3" />,
-      title: "Projects",
-      desc: "Built more than 5 mobile apps",
+      title: "Experience",
+      desc: "Working as a Junior Flutter Developer at Miicon Solution (June 2025 – Present)",
     },
   ];
 
@@ -93,14 +93,14 @@ export const KeyFeaturesSection = () => {
               <span className="font-semibold text-gray-800 dark:text-white">
                 Flutter Developer
               </span>{" "}
-              with over 6 months of professional experience in cross-platform
-              mobile application development. I specialize in building modern
-              apps using{" "}
+              with over 6 months of professional experience in building
+              cross-platform mobile applications. Currently, I’m working as a{" "}
               <span className="font-semibold text-gray-800 dark:text-white">
-                GetX, Firebase, and clean architecture
+                Junior Flutter Developer at Miicon Solution
               </span>
-              . My goal is to design beautiful UIs and create seamless user
-              experiences.
+              , where I focus on developing scalable, high-performance apps with
+              clean architecture and modern UI design principles. My goal is to
+              build seamless and visually engaging mobile experiences.
             </p>
 
             {/* Info Cards */}
